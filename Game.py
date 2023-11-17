@@ -4,7 +4,7 @@ random_choose = ["paper", "rock", "scissors"]
 
 # that I do with chatgpt
 while True :
-  user_choose = str(input("Please enter your shape (paper, rock, scissors): "))
+  user_choose = str(input("Please enter your shape (paper, rock, scissors): ").lower())
   if user_choose in random_choose:
     break
   else:
