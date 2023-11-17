@@ -2,6 +2,7 @@ import random2;
 
 random_choose = ["paper", "rock", "scissors"]
 
+# that I do with chatgpt
 while True :
   user_choose = str(input("Please enter your shape (paper, rock, scissors): "))
   if user_choose in random_choose:
@@ -26,6 +27,11 @@ elif user_choose == "rock" and pc_choose == "scissors":
 
 elif user_choose == "scissors" and pc_choose == "paper":
   print("You are won!")
+
+elif (user_choose == "scissors" and pc_choose == "paper") or \
+    (user_choose == "rock" and pc_choose == "scissors") or \
+    (user_choose == "scissors" and pc_choose == "paper") :
+    print("You are won!")
 
 else:
   print ("You are a loser!")
